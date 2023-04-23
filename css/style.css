@@ -151,11 +151,12 @@ img {
   url("../images/hero/hero_img.jpg");
   background-size: cover;
   background-color: #2E2F42B2;
+  
 }
 
 .main-h {
   max-width: 496px;
-  margin-top: 0;
+  margin: auto;
   margin-bottom: 48px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -168,9 +169,8 @@ img {
 .modal-btn {
   min-width: 169px;
   height: 56px;
-  display: block;
+  display: inline-block;
   flex-direction: row;
-  align-items: flex-start;
   border: none;
   background-color: #4d5ae5;
   padding: 16px 20px;
@@ -184,8 +184,7 @@ img {
   line-height: 1.5;
   align-items: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
-}
+  color: #ffffff;}
 
 .modal-btn:hover,
 .modal-btn:focus {
@@ -311,7 +310,22 @@ border-radius: 0px 0px 4px 4px;}
   text-align: center;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-bottom: 8px;
 }
+
+.social_list {display:flex;
+  justify-content: center;
+  gap: 24px;
+  }
+
+.social_list_link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width:40px;
+   height:40px; 
+   border-radius:50%;
+  background-color: #4D5AE5;}
 
 .logo-footer{ display: inline-block;
   margin-bottom: 16px; }
