@@ -53,9 +53,8 @@ img {
 }
 
 .page-header {
-  /*padding-top: 25.5px;
-  padding-bottom: 25.5px;*/
-  border-bottom: 1px solid #e7e9fc
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
 }
 
 .page-nav {
@@ -151,8 +150,9 @@ img {
   url("../images/hero/hero_img.jpg");
   background-size: cover;
   background-color: #2E2F42B2;
-  
-}
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .main-h {
   max-width: 496px;
@@ -191,6 +191,11 @@ img {
   background-color: #404bbf;
 }
 
+
+
+
+
+
 .section-two {
   /*margin-top: 120px;
   margin-bottom: 120px;*/
@@ -201,7 +206,17 @@ img {
   display: flex;
 }
 
-.section_two_link {
+.icon_cntr {display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+
+/*.section_two_link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -209,7 +224,7 @@ img {
   border-radius: 4px;
   width: 264px;
   height: 112px;
-margin-bottom: 8px;}
+margin-bottom: 8px;}*/
   
 
 .section-two-object {width: calc((100%-72px)/4);}
@@ -238,6 +253,11 @@ margin-bottom: 8px;}
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+
+
+
+
 
 .section-three {
   padding-bottom: 120px 
@@ -276,7 +296,8 @@ margin-bottom: 8px;}
 }
 
 .position_container {padding: 32px 16px;
-  background-color: #ffffff
+  background-color: #ffffff;
+  padding: 32px 0;
 }
 
 .section_four_item:not(:last-child) {
@@ -335,11 +356,12 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
    width:40px;
    height:40px; 
    border-radius:50%;
-  background-color: #4D5AE5;}
+   background-color: #404bbf; }
 
 .social_list_link:hover,
 .social_list_link:focus {background-color: #31D0AA;}
 
+.social_list_icon {fill: #f4f4fd }
 
 
 
@@ -347,7 +369,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 
 
-.section_five_cntr {
+
+.section_five{
 padding-top: 120px;
 padding-bottom: 120px;}
 
@@ -355,30 +378,46 @@ padding-bottom: 120px;}
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.1;
+  /*line-height: 40px;*/
   color: #2E2F42;
   text-align: center;
-padding-bottom: 72px;}
+  margin-bottom: 72px;}
 
 .costomers_list {display: flex;
   display:flex;
   justify-content: center;
   gap: 24px;}
 
-.costumers_link .costomers_list_icon:hover,
-.costumers_link .costomers_list_icon:focus{fill: #404BBF;}
+.costumers_link {width: 100%,;
+  height: 100%,;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  color: #8e8f99;
+  border-color: #404bbf;
+}
+
+/*.costumers_link .costomers_list_icon:hover,
+.costumers_link .costomers_list_icon:focus{fill: #404BBF;}*/
+
+.costomers_list_icon {fill: currentColor;}
 
 .costumers_item {
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #8E8F99;
   border-radius: 4px;
   width: 168px;
-  height:88px;}
+  height:88px;*/
+  width: calc((100% - 120px) / 6; }
 
 .costumers_item:hover,
-.costumers_item:focus{border-color: #404BBF;}
+.costumers_item:focus{border-color: #404BBF;
+  color: #404bbf; }
   
 
 
@@ -403,6 +442,7 @@ padding-bottom: 72px;}
 }
 
 .footer_container {display: flex;
+  gap: 16px;
  /* justify-content: center;*/
  /*align-items: center;*/
 }
@@ -428,6 +468,11 @@ margin-left: 156px;}
   width: 264px;
   height: 72px;
 }
+
+
+
+
+
 
 .portfolio-section {padding: 96px 0 120px;}
 
@@ -474,9 +519,15 @@ margin-left: 156px;}
   row-gap: 48px;
 }
 
+.img_item_link {display: block;}
+
+.img_item_link:hover,
+.img_item_link:focus{box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
+
+
 .img_item {
   width: calc((100% - 48px)/3);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
+}
 
 .text_container {
   padding: 32px 16px;
