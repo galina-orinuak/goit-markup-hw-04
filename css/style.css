@@ -391,7 +391,7 @@ padding-bottom: 120px;}
 .costomers_list_icon {fill: currentColor;}
 
 .costumers_item {
-  width: calc((100% - 120px) / 6; 
+  width: calc((100% - 120px) / 6); 
   height: 88px; }
 
 .costumers_item:hover,
