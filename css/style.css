@@ -368,7 +368,7 @@ padding-bottom: 72px;}
   gap: 24px;}
 
 .costomers_list_icon:hover,
-.costomers_list_icon:focus{color: #404BBF;}
+.costomers_list_icon:focus{background-color: #404BBF;}
 
 .costumers_item {
   display: flex;
