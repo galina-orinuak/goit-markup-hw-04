@@ -327,6 +327,28 @@ border-radius: 0px 0px 4px 4px;}
    border-radius:50%;
   background-color: #4D5AE5;}
 
+
+
+
+  
+
+.section_five_h {font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: #2E2F42;}
+
+.costomers_list {display: flex;
+  display:flex;
+  justify-content: center;
+  gap: 24px;}
+
+
+
+  
+
+
 .logo-footer{ display: inline-block;
   margin-bottom: 16px; }
 
